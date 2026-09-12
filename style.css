@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f5f1e8;
+    color: #243323;
+}
+
+/* MENU */
+
+.menu {
+    position: fixed;
+    width: 210px;
+    height: 100%;
+    padding: 25px 15px;
+    background: #183c28;
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #2f6845;
+}
+
+.menu-final {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    margin-left: 210px;
+    padding: 30px;
+}
+
+header {
+    padding: 30px;
+    background: #dce8d5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0002;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+.pequeno {
+    color: #66836a;
+    font-size: 12px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* CARDS */
+
+.indicadores,
+.desafios {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.indicador,
+.desafio {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0002;
+}
+
+.pessoa {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px #0002;
+}
+
+.indicador {
+    flex: 1;
+}
+
+.indicador span {
+    font-size: 22px;
+}
+
+.indicador small {
+    display: block;
+    color: #777;
+    font-size: 1.2rem;
+}
+
+/* TÍTULOS */
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 15px;
+}
+
+.titulo h2 {
+    font-size: 24px;
+}
+
+.titulo span {
+    background: #f0b429;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* DESAFIOS */
+
+.desafios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.desafio {
+    display: flex;
+    gap: 15px;
+}
+
+.numero {
+    min-width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #2f6845;
+    color: white;
+    border-radius: 50%;
+}
+
+.amarelo {
+    background: #e0a51a;
+}
+
+.descricao {
+    width: 100%;
+}
+
+.descricao p {
+    color: #777;
+}
+
+.desafio5 {
+    grid-column: 1 / 3;
+    width: 50%;
+    margin: auto;
+}
+
+/* FORMULÁRIOS */
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+input,
+button {
+    padding: 7px;
+}
+
+input {
+    width: 120px;
+}
+
+button {
+    background: #2f6845;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.resultado {
+    margin-top: 10px;
+    color: #2f6845;
+}
+
+/* EQUIPE E RODAPÉ */
+
+.equipe {
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    border-top: 1px solid #ddd;
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+    .menu {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-final {
+        display: none;
+    }
+
+    .menu nav {
+        display: flex;
+    }
+
+    .conteudo {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .indicadores,
+    .desafios {
+        display: block;
+    }
+
+    .indicador,
+    .desafio {
+        margin-bottom: 15px;
+    }
+
+    .desafio5 {
+        width: 100%;
+        grid-column: auto;
+    }
+}
