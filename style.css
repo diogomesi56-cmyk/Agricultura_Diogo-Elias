@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -32,6 +32,7 @@ body {
     padding: 10px;
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .menu a:hover {
@@ -41,6 +42,7 @@ body {
 .menu-final {
     position: absolute;
     bottom: 20px;
+    font-size: 16px;
 }
 
 /* CONTEÚDO */
@@ -55,19 +57,25 @@ header {
     background: #dce8d5;
     border-radius: 10px;
     box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #0003;
 }
 
 header h1 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .pequeno {
     color: #66836a;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* CARDS */
@@ -85,14 +93,27 @@ header p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.indicador:hover,
+.desafio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #0003;
 }
 
 .pessoa {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.pessoa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #0003;
 }
 
 .indicador {
@@ -100,13 +121,13 @@ header p {
 }
 
 .indicador span {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .indicador small {
     display: block;
     color: #777;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* TÍTULOS */
@@ -118,14 +139,14 @@ header p {
 }
 
 .titulo h2 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .titulo span {
     background: #f0b429;
     padding: 6px 10px;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* DESAFIOS */
@@ -147,6 +168,7 @@ header p {
     background: #2f6845;
     color: white;
     border-radius: 50%;
+    font-size: 18px;
 }
 
 .amarelo {
@@ -159,6 +181,7 @@ header p {
 
 .descricao p {
     color: #777;
+    font-size: 18px;
 }
 
 .desafio5 {
@@ -178,6 +201,7 @@ header p {
 input,
 button {
     padding: 7px;
+    font-size: 16px;
 }
 
 input {
@@ -191,9 +215,14 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    background: #183c28;
+}
+
 .resultado {
     margin-top: 10px;
     color: #2f6845;
+    font-size: 18px;
 }
 
 /* EQUIPE E RODAPÉ */
@@ -205,8 +234,39 @@ button {
 footer {
     margin-top: 30px;
     padding: 20px 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-top: 1px solid #ddd;
+}
+
+.caixa-rolagem {
+    height: 500px;
+    overflow-y: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.caixa-rolagem:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 15px #0003;
+}
+
+.conteudo-caixa {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.conteudo-caixa h1 {
+    text-align: center;
+}
+
+.conteudo-caixa:last-child {
+    border-bottom: none;
 }
 
 /* CELULAR */
