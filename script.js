@@ -31,21 +31,31 @@ function lucro() {
 
 // RANKING
 function ranking() {
+    let nome1 = document.getElementById("p1").placeholder;
+    let nome2 = document.getElementById("p2").placeholder;
+    let nome3 = document.getElementById("p3").placeholder;
+    let nome4 = document.getElementById("p4").placeholder;
+    
     let p1 = Number(document.getElementById("p1").value);
     let p2 = Number(document.getElementById("p2").value);
     let p3 = Number(document.getElementById("p3").value);
     let p4 = Number(document.getElementById("p4").value);
-    let lista = [p1, p2, p3, p4];
+    let lista = [
+    { nome: nome1, pontos: p1 },
+    { nome: nome2, pontos: p2 },
+    { nome: nome3, pontos: p3 },
+    { nome: nome4, pontos: p4 }
+    ];
 
     lista.sort(function(a, b) {
-        return b - a;
+        return b.pontos - a.pontos;
     });
 
     document.getElementById("resultado4").innerHTML =
-        "1º lugar: " + lista[0] +
-        "<br>2º lugar: " + lista[1] +
-        "<br>3º lugar: " + lista[2] +
-        "<br>4º lugar: " + lista[3];
+        "1º lugar: " + lista[0].nome + " - " + lista[0].pontos + " quilos" +
+        "<br>2º lugar: " + lista[1].nome + " - " + lista[1].pontos + " quilos" +
+        "<br>3º lugar: " + lista[2].nome + " - " + lista[2].pontos + " quilos" +
+        "<br>4º lugar: " + lista[3].nome + " - " + lista[3].pontos + " quilos";
 }
 
 // MÉDIA
