@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial;
-    background: #f5f1e8;
+    background: linear-gradient(#f5f1e8,#e0d8c3);
     color: #243323;
 }
 
@@ -17,7 +17,7 @@ body {
     width: 210px;
     height: 100%;
     padding: 25px 15px;
-    background: #183c28;
+    background: linear-gradient(90deg, #183c28, #2a6b47, #318c5a);
     color: white;
 }
 
@@ -109,6 +109,7 @@ header p {
     font-size: 1.7rem;
     box-shadow: 0 4px 10px #0002;
     transition: 0.3s;
+    margin: 5px;
 }
 
 .pessoa:hover {
@@ -175,6 +176,9 @@ header p {
     background: #e0a51a;
 }
 
+.azul{
+    background: #2b6f99
+}
 .descricao {
     width: 100%;
 }
@@ -198,8 +202,7 @@ header p {
     gap: 5px;
 }
 
-input,
-button {
+input,button {
     padding: 7px;
     font-size: 16px;
 }
@@ -235,7 +238,8 @@ footer {
     margin-top: 30px;
     padding: 20px 0;
     font-size: 1.3rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid black;
+    text-align: center;
 }
 
 .caixa-rolagem {
@@ -305,4 +309,9 @@ footer {
         width: 100%;
         grid-column: auto;
     }
+}
+
+#mapa{
+  margin-left: 5em;
+  height: 60px;
 }
