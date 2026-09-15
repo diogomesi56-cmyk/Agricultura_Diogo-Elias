@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background: linear-gradient(#f5f1e8,#e0d8c3);
+    background: linear-gradient(#f5f1e8,#e0d8c3,#c4b796);
     color: #243323;
 }
 
@@ -201,6 +201,7 @@ button {
     color: white;
     border: 0;
     border-radius: 5px;
+
 }
 
 button:hover {
@@ -287,9 +288,13 @@ footer {
         width: 100%;
         grid-column: auto;
     }
+
+    button {
+        margin: 0px 0px 0px 85px;
+    }
 }
 
 #mapa{
   margin-left: 2.5em;
-  height: 60px;
+  height: 62px;
 }
